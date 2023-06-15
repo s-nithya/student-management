@@ -22,7 +22,7 @@ public class StudentService {
 
 
     public String addStudent(Student student) throws StudentAlreadyExistsException {
-        log.trace("Entry addStudent method");
+        log.trace("Entry addStudent");
 
         Optional<Student> opStu = studentRepo.findById(student.getRollNo());
 
@@ -31,7 +31,7 @@ public class StudentService {
         } else {
             studentRepo.save(student);
         }
-        log.trace("Exit addStudent method");
+        log.trace("Exit addStudent");
 
 
         return "Student Added Successfully";
