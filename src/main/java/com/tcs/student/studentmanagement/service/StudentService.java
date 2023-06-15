@@ -48,7 +48,7 @@ public class StudentService {
             Student student = studentOp.get();
             student.setGrade("D");
             studentRepo.save(student);
-            return "Student updated";
+            return "Student updated successfully";
         } else {
             throw new StudentNotFoundException("Student Not Found");
         }
