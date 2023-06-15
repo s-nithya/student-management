@@ -34,7 +34,7 @@ public class StudentService {
         log.trace("Exit addStudent method");
 
 
-        return "Student Added";
+        return "Student Added Successfully";
     }
 
 
