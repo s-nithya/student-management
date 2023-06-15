@@ -22,7 +22,7 @@ public class StudentService {
 
 
     public String addStudent(Student student) throws StudentAlreadyExistsException {
-        log.trace("Entry addStudent");
+        log.trace("Entry addStudent function");
 
         Optional<Student> opStu = studentRepo.findById(student.getRollNo());
 
