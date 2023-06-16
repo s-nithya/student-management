@@ -34,7 +34,7 @@ public class StudentService {
         log.trace("Exit addStudent");
 
 
-        return "Student Added Successfully";
+        return "Student Added Successfully ";
     }
 
 
@@ -61,7 +61,7 @@ public class StudentService {
 
         if (studentOp.isPresent()) {
             studentRepo.deleteById(rollNo);
-            return "Student deleted";
+            return "Student deleted successfully";
         } else {
             throw new StudentNotFoundException("No student found for id " + rollNo);
         }
